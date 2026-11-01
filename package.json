@@ -1,0 +1,39 @@
+{
+  "name": "floodlens-ghana",
+  "private": true,
+  "version": "1.0.0",
+  "description": "FloodLens Ghana: Evidence-based geographic exploration platform for historical flood events, healthcare infrastructure, and hydrometeorological monitoring coverage in Ghana.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "data:build": "python scripts/build_geospatial_datasets.py"
+  },
+  "dependencies": {
+    "@turf/distance": "^7.2.0",
+    "@turf/helpers": "^7.2.0",
+    "lucide-react": "^0.475.0",
+    "maplibre-gl": "^5.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "@tailwindcss/vite": "^4.0.6",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@types/node": "^22.13.4",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "jsdom": "^26.0.0",
+    "tailwindcss": "^4.0.6",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0",
+    "vitest": "^3.0.5",
+    "@vitejs/plugin-react": "^4.3.4"
+  }
+}
